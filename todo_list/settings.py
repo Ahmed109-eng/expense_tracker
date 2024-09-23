@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-s%*3-im74x^nd#=sa8!2xk15dy9522rl5am909z@tlcc13mtrg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 # '', '.herokuapp.com
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '8000-ahmed109eng-todolist-7nhvtbpgz46.ws.codeinstitute-ide.net', '.herokuapp.com']
 
 
 # Application definition
@@ -89,6 +89,11 @@ WSGI_APPLICATION = 'todo_list.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com"
+]
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
