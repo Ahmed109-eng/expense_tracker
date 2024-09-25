@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-s%*3-im74x^nd#=sa8!2xk15dy9522rl5am909z@tlcc13mtrg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 # '', '.herokuapp.com
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '8000-ahmed109eng-todolist-7nhvtbpgz46.ws.codeinstitute-ide.net', '.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '8000-ahmed109eng-todolist-0by1zwasx4s.ws.codeinstitute-ide.net', '.herokuapp.com']
 
 
 # Application definition
@@ -75,7 +75,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'todo_list.wsgi.application'
 
-
+LOGIN_REDIRECT_URL = 'tasks'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
@@ -116,7 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-gb'
 
 TIME_ZONE = 'UTC'
 
@@ -124,6 +124,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+LOGIN_URL = 'login'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/

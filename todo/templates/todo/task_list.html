@@ -1,0 +1,29 @@
+{% extends 'todo/base.html' %}
+
+{% block title %}Task List{% endblock %}
+
+{% block content %}
+<h2>Task List</h2>
+
+<!-- Loop through tasks and display them -->
+<ul>
+    {% for task in tasks %}
+        <li>
+            <h4>{{ task.title }}</h4>
+            <p>{{ task.description }}</p>
+            <p>Status: {{ task.complete }}</p>
+            <!-- Update button -->
+            <a href="{% url 'task-update' task.id %}">Update</a>
+            <!-- Delete button -->
+            <form action="{% url 'task-delete' task.id %}" method="POST" style="display:inline;">
+                {% csrf_token %}
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+    {% empty %}
+        <li>No tasks available.</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
+
