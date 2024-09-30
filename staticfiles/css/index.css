@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background: #929191;
+    font-family: 'Overpass', sans-serif;
+    padding-top: 50px;
+
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+    box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    background: #000;
+    justify-content: center;
+}
+.page-header a {
+    color: fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Roboto', sans-serif;
+}
+.add-new {
+    text-decoration: none;
+    background-color: #f5ae96;
+    color: #000;
+    padding: 8px;
+    border-radius: 5px;
+}
+.task-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-top: 1px solid #dfe4ea;
+    overflow: hidden;
+}
+.task-wrapper a {
+    text-decoration: none;
+}
+.task-title {
+    display: flex;
+    padding: 20px;
+}
+
+.task-title a {
+    text-decoration: none;
+    color: #4b5156;
+    margin-left: 10px;
+}
+
+.task-complete-icon {
+    height: 20px;
+    width: 20px;
+    background-color: #62ee18;
+    border-radius: 50%;
+}
+
+.task-incomplete-icon {
+    height: 20px;
+    width: 20px;
+    background-color: #fa0a07;
+    border-radius: 50%;
+}
+
+.delete-link {
+    text-decoration: none;
+    font-weight: 900;
+    color: #000;
+    font-size: 25px;
+    line-height: 0;
+    padding: 20px 20px;
+}
+.logout {
+    color: #fff;
+    background-color: transparent;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    border: 1px solid #fff;
+}
+.search-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+input[type=text],
+input[type=password],
+textarea {
+    border: 1px solid #757575;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+}
+.go-back {
+    color: #fff;
+}
+label {
+    padding-top: 10px !important;
+    display: block;
+}
+
+::placeholder {
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+.btn {
+    border: 1px solid #000;
+    background-color: #929191;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 42px;
+    text-shadow: 1px 1px #81413b;
+    text-decoration: none;
+}
+.card-body {
+    padding: 20px;
+    
+}
