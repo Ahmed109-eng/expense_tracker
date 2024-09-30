@@ -1,47 +1,120 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    height: 100vh;
-    width: 100vw;
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background: #96cff5 ;
+    font-family: 'Overpass', sans-serif;
+    padding-top: 50px;
+
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+    box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+}
+.page-header {
+display: flex;
+justify-content: space-between;
+color: #fff;
+padding: 10px;
+border-radius: 5px 5px 0 0;
+background: #db96f5 ;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+font-family: 'Roboto', sans-serif;
+}
+.task-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-top: 1px solid #dfe4ea;
+    overflow: hidden;
+}
+.task-title {
+    display: flex;
+    padding: 20px;
 }
 
-header {
-    background-color: #343a40;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+.task-title a {
+    text-decoration: none;
+    color: #4b5156;
+    margin-left: 10px;
 }
 
-nav a {
-    margin: 0 1rem;
-    color: white;
+.task-complete-icon {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(0, 255, 0);
+    border-radius: 50%;
+}
+
+.task-incomplete-icon {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(160, 160, 160);
+    border-radius: 50%;
+}
+
+.delete-link {
+    text-decoration: none;
+    font-weight: 900;
+    color: #6249cf;
+    font-size: 22px;
+    line-height: 0;
+    padding: 20px 20px;
+}
+.page-header a {
+    color: rgb(247, 247, 247);
     text-decoration: none;
 }
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    width: 90%;
-    max-width: 800px;
-    height: 75vh;
-    margin: auto;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+#search-add-wrapper {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
+}
+input[type=text],
+input[type=password],
+textarea {
+    border: 1px solid #757575;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #343a40;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+label {
+    padding-top: 10px !important;
+    display: block;
+}
+
+::placeholder {
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+.button {
+    border: 1px solid #757575;
+    background-color: #FFF;
+    color: #6249cf;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#add-link {
+    color: #6249cf;
+    text-decoration: none;
+    font-size: 42px;
+    text-shadow: 1px 1px #81413b;
+}
+.card-body {
+    padding: 20px;
+    
 }

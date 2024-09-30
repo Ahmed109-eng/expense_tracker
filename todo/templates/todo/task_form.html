@@ -1,18 +1,15 @@
 {% extends 'todo/base.html' %}
 
-{% block title %}My Tasks{% endblock %}
 {% block content %}
+<div class="page-header">
+    <a class="go-back" href="{% url 'task-list' %}">&#8592; Back</a>
+</div>
 
-    <form method="POST">
+<div class="card-body">
+    <form method="POST" action="">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Create Task</button>
+        {{form.as_p}}
+        <input class="btn" type="submit" value="Update">
     </form>
-
-    <h2>Update Task</h2>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}  <!-- Render the form fields -->
-        <button type="submit">Update Task</button>
-    </form>
-{% endblock %}
+</div>
+{% endblock content %}

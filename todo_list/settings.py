@@ -25,10 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-s%*3-im74x^nd#=sa8!2xk15dy9522rl5am909z@tlcc13mtrg'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 # '', '.herokuapp.com
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '8000-ahmed109eng-todolist-0by1zwasx4s.ws.codeinstitute-ide.net', '.herokuapp.com']
 
@@ -75,7 +75,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'todo_list.wsgi.application'
 
-LOGIN_REDIRECT_URL = 'tasks'
+
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
@@ -135,3 +135,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_URL = 'login'
