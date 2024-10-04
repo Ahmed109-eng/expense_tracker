@@ -95,7 +95,7 @@ Login page
 
 
 # Testing 
-The app Testing was performed manually for logins, and displaying the correct information. adding ndew tasks, updating tasks and deleting tasking.
+The app Testing was performed manually for logins, and displaying the correct information. adding new tasks, updating tasks and deleting tasking.
 
 # Validation of HTML, CSS, JS, and Python Code
 I used the following validation tools to validate HTML, CSS, PYTHON codes.
